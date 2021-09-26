@@ -4,6 +4,7 @@
     <amplify-authenticator id="app">
       <NuxtLink to="/MapPage">go to map</NuxtLink>
       <amplify-greetings></amplify-greetings>
+
     </amplify-authenticator>
   </div>
 </template>

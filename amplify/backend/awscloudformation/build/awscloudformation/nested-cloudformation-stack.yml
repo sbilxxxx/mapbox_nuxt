@@ -128,6 +128,17 @@
         }
       }
     },
+    "hostingamplifyhosting": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-100847-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "Parameters": {
+          "appId": "d1o8rslyjbhstf",
+          "type": "manual",
+          "env": "dev"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",
