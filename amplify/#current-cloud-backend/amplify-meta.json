@@ -1,0 +1,55 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mapboxnuxt-dev-91727-authRole",
+      "UnauthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-91727-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-91727-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-mapboxnuxt-dev-91727-deployment",
+      "UnauthRoleName": "amplify-mapboxnuxt-dev-91727-unauthRole",
+      "StackName": "amplify-mapboxnuxt-dev-91727",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:569928447457:stack/amplify-mapboxnuxt-dev-91727/2358eec0-1e5f-11ec-9f77-0a8d68cca8f3",
+      "AmplifyAppId": "d3qswxo8gm5w3z"
+    }
+  },
+  "auth": {
+    "mapboxnuxt0c8ff8dd": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-91727-deployment/amplify-cfn-templates/auth/mapboxnuxt0c8ff8dd-cloudformation-template.yml",
+        "logicalId": "authmapboxnuxt0c8ff8dd"
+      },
+      "lastPushTimeStamp": "2021-09-26T00:28:50.709Z",
+      "output": {
+        "UserPoolId": "ap-northeast-1_phydKEHgK",
+        "AppClientIDWeb": "7c692kuvfc8hppqi98mf2jj0u1",
+        "AppClientID": "6dr9kdmpfjrmdj82qkq09plcnv",
+        "IdentityPoolId": "ap-northeast-1:c31f5694-acb2-4c45-8f91-8e455cc8a5c1",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:569928447457:userpool/ap-northeast-1_phydKEHgK",
+        "IdentityPoolName": "mapboxnuxt0c8ff8dd_identitypool_0c8ff8dd__dev",
+        "UserPoolName": "mapboxnuxt0c8ff8dd_userpool_0c8ff8dd"
+      },
+      "lastPushDirHash": "iCXM9joO7j4oXIExh81Nc6nMr0U="
+    }
+  }
+}
