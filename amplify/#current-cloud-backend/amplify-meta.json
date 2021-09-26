@@ -1,19 +1,19 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-mapboxnuxt-dev-91727-authRole",
-      "UnauthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-91727-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-91727-authRole",
+      "AuthRoleName": "amplify-mapboxnuxt-dev-100847-authRole",
+      "UnauthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-100847-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-100847-authRole",
       "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-mapboxnuxt-dev-91727-deployment",
-      "UnauthRoleName": "amplify-mapboxnuxt-dev-91727-unauthRole",
-      "StackName": "amplify-mapboxnuxt-dev-91727",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:569928447457:stack/amplify-mapboxnuxt-dev-91727/2358eec0-1e5f-11ec-9f77-0a8d68cca8f3",
-      "AmplifyAppId": "d3qswxo8gm5w3z"
+      "DeploymentBucketName": "amplify-mapboxnuxt-dev-100847-deployment",
+      "UnauthRoleName": "amplify-mapboxnuxt-dev-100847-unauthRole",
+      "StackName": "amplify-mapboxnuxt-dev-100847",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:569928447457:stack/amplify-mapboxnuxt-dev-100847/4f467dc0-1e66-11ec-8123-063849101f6d",
+      "AmplifyAppId": "d1o8rslyjbhstf"
     }
   },
   "auth": {
-    "mapboxnuxt0c8ff8dd": {
+    "mapboxnuxt64a0387a": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -36,20 +36,20 @@
         ]
       },
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-91727-deployment/amplify-cfn-templates/auth/mapboxnuxt0c8ff8dd-cloudformation-template.yml",
-        "logicalId": "authmapboxnuxt0c8ff8dd"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-100847-deployment/amplify-cfn-templates/auth/mapboxnuxt64a0387a-cloudformation-template.yml",
+        "logicalId": "authmapboxnuxt64a0387a"
       },
-      "lastPushTimeStamp": "2021-09-26T00:28:50.709Z",
+      "lastPushTimeStamp": "2021-09-26T01:13:47.625Z",
       "output": {
-        "UserPoolId": "ap-northeast-1_phydKEHgK",
-        "AppClientIDWeb": "7c692kuvfc8hppqi98mf2jj0u1",
-        "AppClientID": "6dr9kdmpfjrmdj82qkq09plcnv",
-        "IdentityPoolId": "ap-northeast-1:c31f5694-acb2-4c45-8f91-8e455cc8a5c1",
-        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:569928447457:userpool/ap-northeast-1_phydKEHgK",
-        "IdentityPoolName": "mapboxnuxt0c8ff8dd_identitypool_0c8ff8dd__dev",
-        "UserPoolName": "mapboxnuxt0c8ff8dd_userpool_0c8ff8dd"
+        "UserPoolId": "ap-northeast-1_5clw7Jwbk",
+        "AppClientIDWeb": "2qug36ug6kktdqqe4ssqd199sa",
+        "AppClientID": "642kmnhnf1taiel45fi3qucj3f",
+        "IdentityPoolId": "ap-northeast-1:4ceaa428-bf6b-48e5-acfb-d6d056d3d1bd",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:569928447457:userpool/ap-northeast-1_5clw7Jwbk",
+        "IdentityPoolName": "mapboxnuxt64a0387a_identitypool_64a0387a__dev",
+        "UserPoolName": "mapboxnuxt64a0387a_userpool_64a0387a"
       },
-      "lastPushDirHash": "iCXM9joO7j4oXIExh81Nc6nMr0U="
+      "lastPushDirHash": "HC68t0hn5EjkZbkWgSbOXNtk4Jk="
     }
   }
 }

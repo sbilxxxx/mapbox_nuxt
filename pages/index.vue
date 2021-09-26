@@ -1,5 +1,6 @@
 <template>
-  <Default/>
+  <Home/>
+  <!-- <SignIn/> -->
 </template>
 
 <script>

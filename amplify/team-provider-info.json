@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mapboxnuxt-dev-100847-authRole",
+      "UnauthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-100847-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::569928447457:role/amplify-mapboxnuxt-dev-100847-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-mapboxnuxt-dev-100847-deployment",
+      "UnauthRoleName": "amplify-mapboxnuxt-dev-100847-unauthRole",
+      "StackName": "amplify-mapboxnuxt-dev-100847",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:569928447457:stack/amplify-mapboxnuxt-dev-100847/4f467dc0-1e66-11ec-8123-063849101f6d",
+      "AmplifyAppId": "d1o8rslyjbhstf"
+    },
+    "categories": {
+      "auth": {
+        "mapboxnuxt64a0387a": {}
+      }
+    }
+  }
+}
