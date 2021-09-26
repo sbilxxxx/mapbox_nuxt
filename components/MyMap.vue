@@ -82,6 +82,7 @@ export default {
             minZoom: 3,
             style: "mapbox://styles/yusuketakahashi/cktzf9a6t1vyh18pkxakssobh",
             center: [0, 0],
+            pitch: 60,
             zoom: 15
         });
         /*
