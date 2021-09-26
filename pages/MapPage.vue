@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div>Header</div>
+  <div id="app">
     <my-map />
   </div>
 </template>
@@ -8,7 +7,7 @@
 <script>
 import MyMap from '../components/MyMap.vue'
 export default {
-  name: 'Home',
+  name: 'App',
   components: {
     'my-map': MyMap
   }
