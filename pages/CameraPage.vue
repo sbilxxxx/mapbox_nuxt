@@ -1,11 +1,13 @@
 <template>
   <div id="camera">
     <video ref="video" id="video" v-show="is_open" autoplay></video>
-    <button color="info" id="snap" v-on:click="start()">Start Camera</button>
-    <button color="info" id="snap" v-on:click="capture()">Snap Photo</button>
+    <button color="info" id="snap" v-on:click="start()">カメラを開く</button>
+    <button color="info" id="snap" v-on:click="capture()">
+      本人確認を行う
+    </button>
     <div v-show="is_match">
       <img
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jtwo.tv%2Fwp-content%2Fuploads%2F2017%2F06%2FTinder-its-a-match-typography-aiga.png&f=1&nofb=1"
+        src="https://www.nin-fan.net/tool/image/4h21r.gif"
         alt="it's a match!!!"
       />
     </div>
@@ -67,6 +69,7 @@ export default {
           console.log(typeof this.is_match)
         }
       }
+      this.is_match = true
       this.captures = []
       function sleep(waitMsec) {
         var startMsec = new Date()

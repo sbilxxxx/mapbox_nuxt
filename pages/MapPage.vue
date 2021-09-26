@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <my-map />
+    <NuxtLink to="/CameraPage">本人確認カメラ</NuxtLink>
   </div>
 </template>
 
@@ -9,8 +10,8 @@ import MyMap from '../components/MyMap.vue'
 export default {
   name: 'app',
   components: {
-    'my-map': MyMap
-  }
+    'my-map': MyMap,
+  },
 }
 </script>
 

@@ -1,13 +1,19 @@
 <template>
-  <div id="map">
-    <NuxtLink to="/CameraPage">start camera</NuxtLink>
-  </div>
+  <div id="map"></div>
 </template>
 
 <script>
 import mapboxgl from 'mapbox-gl'
 import Camera from './Camera.vue'
 export default {
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css',
+      },
+    ],
+  },
   name: 'MyMap',
   components: {
     camera: Camera,
@@ -39,6 +45,38 @@ export default {
         avatar:
           'https://1.bp.blogspot.com/-HPG_x7XPky8/X-FctLTLkKI/AAAAAAABdEE/xs4T8m0FiBAFptXHGQhQ2c9ZmVWtaeQSgCNcBGAsYHQ/s1028/onepiece05_sanji.png',
         friendStatus: 'mutual',
+      },
+      {
+        name: 'doflamingo',
+        description: 'i hate js',
+        coord: [140.85687883425717, 38.25972457678468],
+        avatar:
+          'https://1.bp.blogspot.com/-VACf4WfKNOk/X-Fcx7DWraI/AAAAAAABdE8/KT0UudaIHrMtbFvjC02yLuPLNBZurGYpQCNcBGAsYHQ/s1103/onepiece17_doflamingo.png',
+        friendStatus: 'none',
+      },
+      {
+        name: 'luffy',
+        description: 'hoge',
+        coord: [140.8626727257504, 38.25230840935681],
+        avatar:
+          'https://1.bp.blogspot.com/-tVeC6En4e_E/X96mhDTzJNI/AAAAAAABdBo/jlD_jvZvMuk3qUcNjA_XORrA4w3lhPkdQCNcBGAsYHQ/s1048/onepiece01_luffy.png',
+        friendStatus: 'none',
+      },
+      {
+        name: 'zoro',
+        description: 'fuga',
+        coord: [140.85565208591427, 38.26696694661706],
+        avatar:
+          'https://1.bp.blogspot.com/-rzRcgoXDqEg/YAOTCKoCpPI/AAAAAAABdOI/5Bl3_zhOxm07TUGzW8_83cXMOT9yy1VJwCNcBGAsYHQ/s1041/onepiece02_zoro_bandana.png',
+        friendStatus: 'none',
+      },
+      {
+        name: 'nami',
+        description: 'piyo',
+        coord: [140.84844230812956, 38.261575662305226],
+        avatar:
+          'https://1.bp.blogspot.com/-2ut_UQv3iss/X-Fcs_0oAII/AAAAAAABdD8/jrCZTd_xK-Y6CP1KwOtT_LpEpjp-1nvxgCNcBGAsYHQ/s1055/onepiece03_nami.png',
+        friendStatus: 'none',
       },
       {
         name: 'doflamingo',
@@ -192,6 +230,6 @@ export default {
 <style scoped>
 #map {
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 </style>
