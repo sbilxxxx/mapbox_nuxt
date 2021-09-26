@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="HeaderContainer">
+      <div class="headerText">Maji City Maching</div>
+    </div>
     <my-map />
   </div>
 </template>
@@ -21,5 +24,13 @@ body {
 }
 #app {
   height: 100vh;
+}
+.HeaderContainer{
+  height: 30px;
+  text-align: center;
+  border: 0.125px solid;
+}
+.headerText{
+  font-size: 20px;
 }
 </style>

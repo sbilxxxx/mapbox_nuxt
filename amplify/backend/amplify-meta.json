@@ -39,7 +39,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-100847-deployment/amplify-cfn-templates/auth/mapboxnuxt64a0387a-cloudformation-template.yml",
         "logicalId": "authmapboxnuxt64a0387a"
       },
-      "lastPushTimeStamp": "2021-09-26T01:56:52.556Z",
+      "lastPushTimeStamp": "2021-09-26T03:09:45.054Z",
       "output": {
         "UserPoolId": "ap-northeast-1_5clw7Jwbk",
         "AppClientIDWeb": "2qug36ug6kktdqqe4ssqd199sa",
@@ -61,7 +61,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-100847-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
         "logicalId": "hostingamplifyhosting"
       },
-      "lastPushTimeStamp": "2021-09-26T01:56:52.566Z",
+      "lastPushTimeStamp": "2021-09-26T03:09:45.055Z",
       "output": {},
       "lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
     }
