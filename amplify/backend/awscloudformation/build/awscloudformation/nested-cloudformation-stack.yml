@@ -77,15 +77,15 @@
         }
       }
     },
-    "authmapboxnuxt0c8ff8dd": {
+    "authmapboxnuxt64a0387a": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-91727-deployment/amplify-cfn-templates/auth/mapboxnuxt0c8ff8dd-cloudformation-template.yml",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-mapboxnuxt-dev-100847-deployment/amplify-cfn-templates/auth/mapboxnuxt64a0387a-cloudformation-template.yml",
         "Parameters": {
-          "identityPoolName": "mapboxnuxt0c8ff8dd_identitypool_0c8ff8dd",
+          "identityPoolName": "mapboxnuxt64a0387a_identitypool_64a0387a",
           "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "mapbox0c8ff8dd",
-          "userPoolName": "mapboxnuxt0c8ff8dd_userpool_0c8ff8dd",
+          "resourceNameTruncated": "mapbox64a0387a",
+          "userPoolName": "mapboxnuxt64a0387a_userpool_64a0387a",
           "autoVerifiedAttributes": "email",
           "mfaConfiguration": "OFF",
           "mfaTypes": "SMS Text Message",
@@ -102,10 +102,10 @@
           "userpoolClientRefreshTokenValidity": 30,
           "userpoolClientWriteAttributes": "email",
           "userpoolClientReadAttributes": "email",
-          "userpoolClientLambdaRole": "mapbox0c8ff8dd_userpoolclient_lambda_role",
+          "userpoolClientLambdaRole": "mapbox64a0387a_userpoolclient_lambda_role",
           "userpoolClientSetAttributes": false,
-          "sharedId": "0c8ff8dd",
-          "resourceName": "mapboxnuxt0c8ff8dd",
+          "sharedId": "64a0387a",
+          "resourceName": "mapboxnuxt64a0387a",
           "authSelections": "identityPoolAndUserPool",
           "authRoleArn": {
             "Fn::GetAtt": [
@@ -132,7 +132,7 @@
       "DependsOn": [
         "AuthRole",
         "UnauthRole",
-        "authmapboxnuxt0c8ff8dd"
+        "authmapboxnuxt64a0387a"
       ],
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -215,7 +215,7 @@
         },
         "idpId": {
           "Fn::GetAtt": [
-            "authmapboxnuxt0c8ff8dd",
+            "authmapboxnuxt64a0387a",
             "Outputs.IdentityPoolId"
           ]
         },
