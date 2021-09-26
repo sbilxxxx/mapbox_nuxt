@@ -7,7 +7,7 @@
 <script>
 import MyMap from '../components/MyMap.vue'
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     'my-map': MyMap
   }

@@ -4,24 +4,28 @@
   </div>
 </template>
 
-<script>
-import mapboxgl from 'mapbox-gl'
-import Camera from './Camera.vue'
+
+<script >
+import mapboxgl from "mapbox-gl";
 export default {
-  name: 'MyMap',
-  components: {
-    camera: Camera,
-  },
-  data: function () {
-    var me = {
-      name: 'crocodile',
-      description: 'hello, world!',
-      coord: [0, 0],
-      avatar:
-        'https://1.bp.blogspot.com/-LZL7jGWmL3Q/X-FcwoOnE2I/AAAAAAABdEs/qUrY1ClrQrMukkdaEnZK8-Bdob7mOdmQgCNcBGAsYHQ/s1307/onepiece13_crocodile.png',
-      friendStatus: 'me',
-    }
-    console.log(me.coord)
+    head: {
+        link: [
+            {
+                rel: 'stylesheet',
+                href: 'https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css',
+            },
+        ],
+    },
+    name: "MyMap",
+    data: function() {
+        var me = {
+            name: 'crocodile',
+            description: 'hello, world!',
+            coord: [0, 0],
+            avatar: 'https://1.bp.blogspot.com/-LZL7jGWmL3Q/X-FcwoOnE2I/AAAAAAABdEs/qUrY1ClrQrMukkdaEnZK8-Bdob7mOdmQgCNcBGAsYHQ/s1307/onepiece13_crocodile.png',
+            friendStatus: 'me'
+        }
+        console.log(me.coord)
 
     let users = [
       {
@@ -82,29 +86,21 @@ export default {
       }
       this.features.push(feature)
     },
-    start() {
-      this.open = true
-      this.video = this.$refs.video
-      if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
-          this.video.srcObject = stream
-          this.video.play()
-        })
-      }
-    },
-  },
-  mounted() {
-    mapboxgl.accessToken = this.accessToken
-    console.log(this.me.coord)
-    var map = new mapboxgl.Map({
-      container: 'map',
-      maxZoom: 25,
-      minZoom: 3,
-      style: 'mapbox://styles/yusuketakahashi/cktzf9a6t1vyh18pkxakssobh',
-      center: [0, 0],
-      zoom: 15,
-    })
-    /*
+
+    mounted() {
+
+        mapboxgl.accessToken = this.accessToken;
+        console.log(this.me.coord)
+        var map = new mapboxgl.Map({
+            container: 'map',
+            maxZoom: 25,
+            minZoom: 3,
+            style: "mapbox://styles/yusuketakahashi/cktzf9a6t1vyh18pkxakssobh",
+            center: [0, 0],
+            pitch: 60,
+            zoom: 15
+        });
+        /*
         map.addControl(
             new mapboxgl.GeolocateControl({
                 positionOptions: {
