@@ -2,9 +2,17 @@
   <div id="map"></div>
 </template>
 
-<script>
+<script >
 import mapboxgl from "mapbox-gl";
 export default {
+    head: {
+        link: [
+            {
+                rel: 'stylesheet',
+                href: 'https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css',
+            },
+        ],
+    },
     name: "MyMap",
     data: function() {
         var me = {
@@ -82,6 +90,7 @@ export default {
             minZoom: 3,
             style: "mapbox://styles/yusuketakahashi/cktzf9a6t1vyh18pkxakssobh",
             center: [0, 0],
+            pitch: 60,
             zoom: 15
         });
         /*
